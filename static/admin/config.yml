@@ -1,0 +1,1265 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "/static/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "telehandlers"
+    label: "Telehandlers"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/telehandlers"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_telehandlers",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - { label: "id", name: "id", widget: "hidden" }
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "7",
+            }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "spider-crawler-booms"
+    label: "Spider Crawler Booms"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/spider-crawler-booms"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_spider_crawler_booms",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "6",
+            }
+          - { label: "id", name: "id", widget: "hidden" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "scissor-lifts"
+    label: "Scissor Lifts"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/scissor-lifts"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_scissor_lifts",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "3",
+            }
+          - { label: "id", name: "id", widget: "hidden" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "forklifts"
+    label: "Forklifts"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/forklifts"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_forklifts",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "8",
+            }
+          - { label: "id", name: "id", widget: "hidden" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "cherry-pickers"
+    label: "Cherry Pickers"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/cherry-pickers"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_cherry_pickers",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "5",
+            }
+          - { label: "id", name: "id", widget: "hidden" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "boom-lifts"
+    label: "Boom Lifts"
+    label_singular: "Page"
+    folder: "src/pages/access-equipment/boom-lifts"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry_boom_lifts",
+        }
+      - {
+          label: "Product",
+          name: "product",
+          widget: "string",
+          default: "equipment",
+        }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Spec"
+        name: "spec"
+        widget: "object"
+        fields:
+          - {
+              label: "category_id",
+              name: "category_id",
+              widget: "hidden",
+              default: "4",
+            }
+          - { label: "id", name: "id", widget: "hidden" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Model", name: "model", widget: "string" }
+          - {
+              label: "Platform Height",
+              name: "platform_height",
+              widget: "string",
+            }
+          - {
+              label: "Working Height",
+              name: "working_height",
+              widget: "string",
+            }
+          - {
+              label: "Platform Capacity",
+              name: "platform_capacity",
+              widget: "string",
+            }
+          - { label: "Overall Width", name: "overall_width", widget: "string" }
+          - {
+              label: "Overall Height",
+              name: "overall_height",
+              widget: "string",
+            }
+          - { label: "Weight", name: "weight", widget: "string" }
+          - {
+              label: "Platform Length",
+              name: "platform_length",
+              widget: "string",
+            }
+          - {
+              label: "Platform Width",
+              name: "platform_width",
+              widget: "string",
+            }
+          - {
+              label: "Up Over Height",
+              name: "up_over_height",
+              widget: "string",
+            }
+          - {
+              label: "Horizontal Reach",
+              name: "horizontal_reach",
+              widget: "string",
+            }
+          - { label: "PDF", name: "pdf", widget: "file" }
+          - { label: "Environment", name: "environment", widget: "string" }
+          - { label: "Job Type", name: "job_type", widget: "string" }
+          - { label: "Terrain", name: "terrain", widget: "string" }
+          - { label: "Fuel Type", name: "fuel_type", widget: "string" }
+          - { label: "Category", name: "category", widget: "string" }
+  - name: "equipment-for-sale"
+    label: "Equipment for sale"
+    label_singular: "Page"
+    folder: "src/pages/equipment-for-sale"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry",
+        }
+      - { label: "Nav", name: "nav", widget: "string" }
+      - { label: "Nav Order", name: "nav_order", widget: "number" }
+      - { label: "Section", name: "section", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Aside"
+        name: "aside"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+  - name: "event-products"
+    label: "Event Products"
+    label_singular: "Page"
+    folder: "src/pages/event-products"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry",
+        }
+      - { label: "Nav", name: "nav", widget: "string" }
+      - { label: "Nav Order", name: "nav_order", widget: "number" }
+      - { label: "Section", name: "section", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Aside"
+        name: "aside"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+  - name: "kiwiscaf-scaffolding"
+    label: "Kiwiscaf Scaffolding"
+    label_singular: "Page"
+    folder: "src/pages/kiwiscaf-scaffolding"
+    create: true
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    slug: "{{title}}"
+    path: "{{title}}"
+    editor:
+      preview: false
+    fields:
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "entry",
+        }
+      - { label: "Nav", name: "nav", widget: "string" }
+      - { label: "Nav Order", name: "nav_order", widget: "number" }
+      - { label: "Section", name: "section", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page Title", name: "page_title", widget: "string" }
+      - { label: "Meta Description", name: "meta_description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Heading", name: "heading", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Aside"
+        name: "aside"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Home"
+        name: "index"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "index",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/access-equipment/boom-lifts.md"
+        label: "Boom Lifts Page"
+        name: "boom_lifts_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_boom_lifts",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/access-equipment/cherry-pickers.md"
+        label: "Cherry Pickers Page"
+        name: "cherry_pickers_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_cherry_pickers",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/access-equipment/forklifts.md"
+        label: "Forklifts Page"
+        name: "forklifts_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_forklifts",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/access-equipment/scissor-lifts.md"
+        label: "Scissor Lifts Page"
+        name: "scissor_lifts_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_scissor_lifts",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/access-equipment/spider-crawler-booms.md"
+        label: "Spider Crawler Booms Page"
+        name: "spider_crawler_booms_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_spider_crawler_booms",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/access-equipment/telehandlers.md"
+        label: "Telehandlers Page"
+        name: "telehandlers_page"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "list_telehandlers",
+            }
+          - { label: "Nav", name: "nav", widget: "string" }
+          - { label: "Nav Order", name: "nav_order", widget: "number" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/about-us.md"
+        label: "About us"
+        name: "about_us"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/account-application.md"
+        label: "Account Application"
+        name: "account_application"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/careers.md"
+        label: "Careers"
+        name: "careers"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/contact-us.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "contact",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+      - file: "src/pages/download-phoneapp.md"
+        label: "Download Phone App"
+        name: "download_phoneapp"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/find-solutions.md"
+        label: "Find Solutions"
+        name: "find_solutions"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "find_solutions",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/locations.md"
+        label: "Locations"
+        name: "locations"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "locations",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/newsletter.md"
+        label: "Newsletter"
+        name: "newsletter"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "newsletter",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/our-history.md"
+        label: "History"
+        name: "history"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/search.md"
+        label: "Search"
+        name: "search"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "search",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/site-survey.md"
+        label: "Site Survey"
+        name: "site_survey"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "site_survey",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/team.md"
+        label: "Team"
+        name: "team"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "team",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Auckland"
+            name: "auckland"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Tel", name: "tel", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+          - label: "Wellington"
+            name: "wellington"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Tel", name: "tel", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+          - label: "Christchurch"
+            name: "christchurch"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Tel", name: "tel", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/terms.md"
+        label: "Terms"
+        name: "terms"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+      - file: "src/pages/video-training.md"
+        label: "Video Training"
+        name: "video_training"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "entry",
+            }
+          - { label: "Section", name: "section", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          - {
+              label: "Meta Description",
+              name: "meta_description",
+              widget: "text",
+            }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - label: "Aside"
+            name: "aside"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
