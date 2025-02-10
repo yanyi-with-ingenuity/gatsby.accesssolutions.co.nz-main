@@ -41,10 +41,10 @@ const EntryForkLifts = ({data}) => {
                             <h2>Specifications</h2>
                             <table className="specs" border="0" cellPadding="0" cellSpacing="0">
                                 <tbody>
-                                    <tr>
-                                        <th>Brand</th>
-                                        <td>{entry.frontmatter.spec.brand}</td>
-                                    </tr>
+                                    {/*<tr>*/}
+                                    {/*    <th>Brand</th>*/}
+                                    {/*    <td>{entry.frontmatter.spec.brand}</td>*/}
+                                    {/*</tr>*/}
                                     <tr>
                                         <th>Model</th>
                                         <td>{entry.frontmatter.spec.model}</td>
